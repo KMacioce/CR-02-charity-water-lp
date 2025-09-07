@@ -1,4 +1,69 @@
-/* charity: water Brand Colors & Fonts
+/* Medium screens: look like full screen, but with less space between elements */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .icon-row .water-drop-left {
+    height: 220px !important;
+    top: 0px !important;
+    left: -200px !important;
+  }
+  .icon-row .water-drop-right {
+    display: none !important;
+  }
+  .hero {
+    padding: 12px 20px;
+    min-height: 100vh;
+    background-position: left center;
+    position: relative;
+  }
+  section {
+    margin: 12px 5px;
+    padding: 12px 8px;
+  }
+  .headline {
+    max-width: 300px;
+    font-size: 0.8em;
+    left: 10px !important;
+    top: 40px !important;
+    position: relative;
+    text-align: left;
+  }
+  .subheadline {
+    max-width: 500px !important;
+    font-size: 1.2em !important;
+    float: right !important;
+    text-align: right !important;
+    left: auto !important;
+    right: 0 !important;
+    position: relative !important;
+  }
+  .logo img {
+    max-width: 200px;
+  }
+  .donate-button {
+    position: absolute;
+    left: 15px;
+    right: auto;
+    top: 62px !important;
+    left: auto !important;
+    margin: 0 !important;
+    font-size: 1em;
+    padding: 6px 14px;
+    display: block;
+  }
+  .logo-img-large {
+    display: none !important;
+  }
+  .logo-img-medium {
+    display: block !important;
+    max-width: 100px !important;
+    margin-left: -27px !important;
+    margin-right: auto;
+  }
+  .logo-img-small {
+    display: none !important;
+  }
+}
+/*
+charity: water Brand Colors & Fonts
 
 Primary Colors:
 - Yellow:     #ffc907
@@ -6,21 +71,10 @@ Primary Colors:
 
 Secondary Colors:
 - Light Blue: #77A8BB
-- Green:      #bf6c46
-- Orange:     #fed8c1
 - Red:        #cbccd1
 - Dark Green: #1a1a1a
-- Pink:       #FFF7E1
 
-Fonts:
-- Proxima Nova
-- Avenir
-
-*/
-
-/* 
-  Charity: Water Landing Page Styles
-  This CSS uses the provided color palette and beginner-friendly styles.
+This CSS uses the provided color palette and beginner-friendly styles.
 */
 
 /* Set up the main font and background color for the whole page */
@@ -40,6 +94,13 @@ body {
     display: block;
     margin-left: auto;
     margin-right: auto; /* Center block elements like images */
+  }
+  .logo-img-large {
+    display: none !important;
+  }
+  .logo-img-small {
+    display: block !important;
+  max-width: 120px !important; /* Make logo smaller on small screens */
   }
 }
 
